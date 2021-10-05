@@ -63,7 +63,7 @@ aside{
 }
 .aside-top{
   width: 100%;
-  height: calc(100% - 180px);
+  height: calc(100% - 120px);
 }
 .aside-logo{
   height: 100px;
@@ -108,7 +108,7 @@ aside{
   width: 85%;
   padding-left: 10px;
 }
-.aside-playlist{
+.aside-playlist>h2{
   padding-left: 20px;
 }
 .aside-playlist>h2{
@@ -120,10 +120,13 @@ aside{
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 20px;
 }
 .add-playlists:hover{
   color: white;
   cursor: pointer;
+  border-left: 5px solid rgb(105, 221, 11);
+
 }
 .aside-playlist>.add-playlists>i{
   font-size: 70px;
@@ -137,11 +140,15 @@ aside{
   list-style: none;
   padding-top: 10px;
   overflow: auto;
-
 }
 .aside-playlist>ul>li{
   padding: 12px 0;
   font-weight: 600;
+  padding-left: 20px;
+
+}
+.aside-playlist>ul>li:hover{
+  border-left: 5px solid rgb(105, 221, 11);
 }
 .aside-playlist>ul>li:hover a{
   color: white;
@@ -152,8 +159,41 @@ aside{
 }
 .aside-bottom{
   width: 100%;
-  height: 180px;
+  height: 120px;
+  padding: 0px 20px;
 }
+.aside-bottom> .download-app{
+  width: 100%;
+  padding: 15px 5px;
+  border-bottom: 1px solid grey;
+}
+.aside-bottom> .download-app>a{
+  text-decoration: none;
+  color: grey;
+  }
+.aside-bottom> .download-app>a>span{
+  padding: 0px 5px;
+  font-weight: 600;
+  font-size: 14px;
+  }
+.aside-bottom> .user{
+  width: 100%;
+  padding: 20px 5px 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.aside-bottom> .user >i{
+  padding: 0px 5px;
+  font-weight: 600;
+  font-size: 40px;
+  }
+.aside-bottom> .user >span{
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+  padding-left: 10px;
+  }
 
 /* MAIN */
 main{
@@ -166,4 +206,5 @@ footer{
   width: 100%;
   height: 100px;
   background-color: green;
+  z-index: 499;
 }
