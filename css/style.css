@@ -10,19 +10,14 @@ html{
 }
 
 /* UTIL */
-{}
-{}
-{}
-{}
-{}
-{}
+
 
 /* HEADER */
 header{
   position: fixed;
   top: 0;
-  left: 0;
-  width: 100%;
+  right: 0;
+  width: calc(100% - 300px);
   height: 100px;
   z-index: 500;
   display: flex;
@@ -37,7 +32,7 @@ header{
   border-radius: 20px;
   border: 1px solid white;
   text-decoration: none;
-  margin-right: 5px;
+  margin-right: 25px;
   transition: 0.5s;
 }
 .bnt-footer>a{
@@ -50,48 +45,125 @@ header{
   border: 2px solid white;
 }
 
+section{
+  height: calc(100vh - 100px);
+  width: 100%;
+}
+
+
+
 /* ASIDE */
 aside{
-  width: 250px;
-  height: calc(100vh - 100px);
+  width: 300px;
+  height: 100%;
   background-color: black;
-  display: relative;
-  position: fixed;
-  z-index: 400;
-  top: 0;
-  left: 0;
+  float: left;
+  color: grey;
+  padding: 5px 0px;
 }
 .aside-top{
   width: 100%;
+  height: calc(100% - 180px);
+}
+.aside-logo{
   height: 100px;
-  background-color: rgb(0, 68, 255);
+}
+.aside-logo>a>img{
+  width: 180px;
+  margin: 20px 25px;
+
 }
 .aside-menu{
   width: 100%;
-  height: 130px;
-  background-color: rgb(81, 255, 0);
+  padding-bottom: 30px;
+}
+.aside-menu>ul{
+  list-style: none;
+  width: 100%;
+}
+.aside-menu>ul>li{
+  width: 100%;
+  padding: 10px 0;
+  font-size: 20px;
+  color: grey;
+  padding: 10px 20px;
+}
+.aside-menu>ul>li:hover{
+  font-weight: 600;
+  border-left: 5px solid rgb(105, 221, 11);
+}
+.aside-menu>ul>li:hover a{
+  color: white;
+}
+.aside-menu>ul>li>a{
+  text-decoration: none;
+  color: grey;
+}
+.aside-menu>ul>li>a>i{
+  width: 15%;
+  font-size: 30px;
+  text-align: right;
+}
+.aside-menu>ul>li>a>span{
+  width: 85%;
+  padding-left: 10px;
 }
 .aside-playlist{
-  width: 100%;
-  height: calc (100vh - 410px);
-  background-color: rgb(255, 230, 0);
-  overflow: auto;
+  padding-left: 20px;
 }
-.aside-bottom{
-  /* position: absolute; */
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 180px;
-  background-color: red;
+.aside-playlist>h2{
+  color: white;
+}
+.add-playlists{
+  padding-top: 15px;
+  padding-right: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.add-playlists:hover{
+  color: white;
+  cursor: pointer;
+}
+.aside-playlist>.add-playlists>i{
+  font-size: 70px;
+  padding-right: 15px;
+}
+.aside-playlist>.add-playlists>span{
+  font-size: 20px;
+  font-weight: 700;
+}
+.aside-playlist>ul{
+  list-style: none;
+  padding-top: 10px;
+  overflow: auto;
 
 }
-{}
-{}
-{}
+.aside-playlist>ul>li{
+  padding: 12px 0;
+  font-weight: 600;
+}
+.aside-playlist>ul>li:hover a{
+  color: white;
+}
+.aside-playlist>ul>li>a{
+  text-decoration: none;
+  color:grey
+}
+.aside-bottom{
+  width: 100%;
+  height: 180px;
+}
+
 /* MAIN */
 main{
   width: calc(100% - 250px);
-  height: 100vh;
+  height: 100%;
   float: right;
+  overflow: auto;
+}
+footer{
+  width: 100%;
+  height: 100px;
+  background-color: green;
 }
