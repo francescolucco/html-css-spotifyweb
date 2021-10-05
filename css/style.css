@@ -40,7 +40,7 @@ header{
   color: white;
 }
 .bnt-footer:hover {
-  transform: scale(1.01);
+  transform: scale(1.05);
   font-weight: 600;
   border: 2px solid white;
 }
@@ -125,8 +125,6 @@ aside{
 .add-playlists:hover{
   color: white;
   cursor: pointer;
-  border-left: 5px solid rgb(105, 221, 11);
-
 }
 .aside-playlist>.add-playlists>i{
   font-size: 70px;
@@ -146,9 +144,6 @@ aside{
   font-weight: 600;
   padding-left: 20px;
 
-}
-.aside-playlist>ul>li:hover{
-  border-left: 5px solid rgb(105, 221, 11);
 }
 .aside-playlist>ul>li:hover a{
   color: white;
@@ -193,6 +188,9 @@ aside{
   font-weight: 600;
   color: white;
   padding-left: 10px;
+  }
+.download-app>a>span:hover{
+  color: white;
   }
 
 /* MAIN */
