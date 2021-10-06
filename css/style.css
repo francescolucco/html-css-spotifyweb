@@ -202,6 +202,9 @@ aside{
   padding: 0px 20px;
   background-color: rgb(0, 0, 0);
 }
+.aside-bottom>img{
+  display: none;
+}
 .aside-bottom> .download-app{
   width: 100%;
   padding: 15px 5px;
@@ -676,46 +679,37 @@ footer{
    display: none;
   }
   .aside-bottom{
-    width: 100%;
-    height: 130px;
-    background-color: rgb(0, 0, 0);
-  }
-  .aside-bottom>.download-app{
-    width: 100%;
-    border-bottom: 1px solid grey;
-  }
-  .aside-bottom>.download-app>a{
-    text-decoration: none;
-    color: grey;
+    padding: 0px 5px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display: inline-block;
-    }
-  .aside-bottom>.download-app>a>span{
-    display: none;
-    }
-    .aside-bottom>.download-app>a>img{
-    width: 100%;
-    }
-  .aside-bottom>.user{
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: centert;
     align-items: center;
+
   }
-  .aside-bottom> .user >img{
-    width: 35px;
-    height: 35px;
+  .aside-bottom>img{
+    display: block;
+    width: 60%;
     background-color: grey;
     border-radius: 50%;
-    }
-  .aside-bottom> .user >span{
+  }
+  .aside-bottom>.app-download-icon>img{
+    display: block;
+    width: 60%;
+  }
+  .app-download-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: centert;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  .aside-bottom>.download-app{
     display: none;
-    }
-  .download-app>a>span:hover{
-    color: white;
-    }
+  }
+  .aside-bottom>.user{
+    display: none;
+  }
+
 }
 {}
 {}
