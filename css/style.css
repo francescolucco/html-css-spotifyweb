@@ -315,8 +315,15 @@ main{
   justify-content: flex-start;
   flex-wrap: wrap;
   align-items: flex-start;
+  width: 100%;
 }
-
+.row-top>.conteiner-box-cover{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width: 100%;
+}
 .row-top>h1{
   margin-bottom: 30px;
 }
@@ -325,6 +332,13 @@ main{
   margin-bottom: 25px;
   width: calc(100% / 6);
   flex-shrink: 0;
+}
+.box-cover{
+  width: calc(100% / 6.5);
+  flex-shrink: 0;
+}
+.box-cover>img{
+  width: 100%;
 }
 .box-cover>h3, .box-cover>p{
   text-align: center;
@@ -336,6 +350,19 @@ main{
 .box-cover>h3{
   padding-top: 20px;
 }
+.row-center>h1, .row-bottom>h1{
+  margin-bottom: 10px;
+  width: 100%;
+}
+.row-center>p, .row-bottom>p{
+  margin-bottom: 30px;
+  width: 100%;
+}
+.row-bottom>.conteiner-box-cover>.box-cover>img{
+  border-radius: 50%;
+}
+
+
 
 {}
 {}
