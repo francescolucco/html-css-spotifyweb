@@ -94,6 +94,9 @@ aside{
   vertical-align: middle;
   padding-left: 20px;
 }
+.aside-logo>a>img.small{
+  display: none;
+}
 .aside-menu{
   width: 100%;
   height: 200px;
@@ -279,6 +282,7 @@ main{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 .main-nav>ul>li{
   margin: 0 15px;
@@ -317,13 +321,7 @@ main{
   align-items: flex-start;
   width: 100%;
 }
-.row-top>.conteiner-box-cover{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  width: 100%;
-}
+
 .row-top>h1{
   margin-bottom: 30px;
 }
@@ -333,10 +331,7 @@ main{
   width: calc(100% / 6);
   flex-shrink: 0;
 }
-.box-cover{
-  width: calc(100% / 6.5);
-  flex-shrink: 0;
-}
+
 .box-cover>img{
   width: 100%;
 }
@@ -583,7 +578,146 @@ footer{
   border-radius: 50%;
   background-color: white;
   display: none;
-}{}
+}
+
+/* **********MEDIA QUERIES********** */
+
+@media screen and (max-width: 1200px){
+  .box-cover{
+    padding-right: 20px;
+    margin-bottom: 25px;
+    width: calc(100% / 4);
+    flex-shrink: 0;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .box-cover{
+    padding-right: 20px;
+    margin-bottom: 25px;
+    width: calc(100% / 2);
+    flex-shrink: 0;
+  }
+}
+@media screen and (max-width: 768px){
+  .box-cover{
+    padding-right: 20px;
+    margin-bottom: 25px;
+    width: calc(100% / 2);
+    flex-shrink: 0;
+  }
+  header{
+    width: calc(100% - 70px);
+  }
+  main{
+    width: calc(100% - 70px);
+    height: 100%;
+    float: right;
+    overflow: auto;
+    background-color: rgb(21, 20, 29);
+    padding-top: 95px;
+  }
+  aside{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    width: 70px;
+    height: 100%;
+    background-color: black;
+    float: left;
+    color: grey;
+  }
+  .aside-top{
+    width: 100%;
+    height: calc(100% - 130px);
+    min-height: 300px;
+  }
+  .aside-logo{
+    height: 60px;
+    padding-top: 5px;
+  }
+  .aside-logo>a>img{
+    display: none;
+  }
+  .aside-logo>a>img.small{
+    display: block;
+    vertical-align: middle;
+    padding: 5px ;
+    width: 90%;
+    margin: auto;
+  }
+  .aside-menu{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .aside-menu>ul>li:hover{
+    font-weight: 600;
+  }
+  .aside-menu>ul>li:hover a{
+    color: white;
+  }
+  .aside-menu>ul>li>a{
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .aside-menu>ul>li>a>img{
+    width: 30px;
+  }
+  .aside-menu>ul>li>a>span{
+    display: none;
+  }
+  .aside-playlist{
+   display: none;
+  }
+  .aside-bottom{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(0, 0, 0);
+  }
+  .aside-bottom>.download-app{
+    width: 100%;
+    border-bottom: 1px solid grey;
+  }
+  .aside-bottom>.download-app>a{
+    text-decoration: none;
+    color: grey;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline-block;
+    }
+  .aside-bottom>.download-app>a>span{
+    display: none;
+    }
+    .aside-bottom>.download-app>a>img{
+    width: 100%;
+    }
+  .aside-bottom>.user{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .aside-bottom> .user >img{
+    width: 35px;
+    height: 35px;
+    background-color: grey;
+    border-radius: 50%;
+    }
+  .aside-bottom> .user >span{
+    display: none;
+    }
+  .download-app>a>span:hover{
+    color: white;
+    }
+}
+{}
 {}
 {}
 {}
